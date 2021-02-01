@@ -1,0 +1,190 @@
+tabs:
+    fields:
+        driver:
+            label: 'pensoft.imageresize::lang.settings.fields.driver.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.driver.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.main'
+            span: left
+            required: 1
+            type: dropdown
+            options:
+                gd: 'pensoft.imageresize::lang.settings.fields.driver.options.gd'
+                imagick: 'pensoft.imageresize::lang.settings.fields.driver.options.imagick'
+            default: gd
+        background:
+            label: 'pensoft.imageresize::lang.settings.fields.background.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.background.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.main'
+            span: right
+            type: colorpicker
+            default: '#ffffff'
+        mode:
+            label: 'pensoft.imageresize::lang.settings.fields.mode.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.mode.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.main'
+            span: left
+            required: 1
+            type: dropdown
+            options:
+                auto: 'pensoft.imageresize::lang.settings.fields.mode.options.auto'
+                contain: 'pensoft.imageresize::lang.settings.fields.mode.options.contain'
+                cover: 'pensoft.imageresize::lang.settings.fields.mode.options.cover'
+                stretch: 'pensoft.imageresize::lang.settings.fields.mode.options.stretch'
+            default: auto
+        format:
+            label: 'pensoft.imageresize::lang.settings.fields.format.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.format.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.main'
+            span: left
+            required: 1
+            type: dropdown
+            options:
+                auto: 'pensoft.imageresize::lang.settings.fields.format.options.auto'
+                jpg: 'pensoft.imageresize::lang.settings.fields.format.options.jpg'
+                png: 'pensoft.imageresize::lang.settings.fields.format.options.png'
+                webp: 'pensoft.imageresize::lang.settings.fields.format.options.webp'
+                bmp: 'pensoft.imageresize::lang.settings.fields.format.options.bmp'
+                gif: 'pensoft.imageresize::lang.settings.fields.format.options.gif'
+                ico: 'pensoft.imageresize::lang.settings.fields.format.options.ico'
+            default: auto
+        quality:
+            label: 'pensoft.imageresize::lang.settings.fields.quality.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.quality.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.main'
+            span: left
+            type: text
+            default: 65
+        _404:
+            type: section
+            label: 'pensoft.imageresize::lang.settings.sections._404.label'
+            comment: 'pensoft.imageresize::lang.settings.sections._404.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.main'
+        image_not_found:
+            label: 'pensoft.imageresize::lang.settings.fields.image_not_found.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.image_not_found.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.main'
+            span: left
+            type: mediafinder
+        image_not_found_background:
+            label: 'pensoft.imageresize::lang.settings.fields.image_not_found_background.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.image_not_found_background.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.main'
+            span: right
+            type: colorpicker
+            default: '#c9d5d3'
+        image_not_found_mode:
+            label: 'pensoft.imageresize::lang.settings.fields.image_not_found_mode.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.image_not_found_mode.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.main'
+            span: left
+            type: dropdown
+            options:
+                auto: 'pensoft.imageresize::lang.settings.fields.mode.options.auto'
+                contain: 'pensoft.imageresize::lang.settings.fields.mode.options.contain'
+                cover: 'pensoft.imageresize::lang.settings.fields.mode.options.cover'
+                stretch: 'pensoft.imageresize::lang.settings.fields.mode.options.stretch'
+            default: contain
+        image_not_found_transparent:
+            label: 'pensoft.imageresize::lang.settings.fields.image_not_found_transparent.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.image_not_found_transparent.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.main'
+            span: right
+            type: checkbox
+        image_not_found_format:
+            label: 'pensoft.imageresize::lang.settings.fields.image_not_found_format.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.image_not_found_format.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.main'
+            span: left
+            type: dropdown
+            options:
+                auto: 'pensoft.imageresize::lang.settings.fields.format.options.auto'
+                jpg: 'pensoft.imageresize::lang.settings.fields.format.options.jpg'
+                png: 'pensoft.imageresize::lang.settings.fields.format.options.png'
+                webp: 'pensoft.imageresize::lang.settings.fields.format.options.webp'
+                bmp: 'pensoft.imageresize::lang.settings.fields.format.options.bmp'
+                gif: 'pensoft.imageresize::lang.settings.fields.format.options.gif'
+                ico: 'pensoft.imageresize::lang.settings.fields.format.options.ico'
+            default: contain
+        image_not_found_quality:
+            label: 'pensoft.imageresize::lang.settings.fields.image_not_found_quality.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.image_not_found_quality.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.main'
+            span: left
+            type: text
+            default: 65
+        filters:
+            label: 'pensoft.imageresize::lang.settings.fields.filters.label'
+            prompt: 'pensoft.imageresize::lang.settings.fields.filters.prompt'
+            tab: 'pensoft.imageresize::lang.settings.tabs.filters'
+            type: repeater
+            form:
+                fields:
+                    code:
+                        label: 'pensoft.imageresize::lang.settings.fields.filters.fields.code.label'
+                        comment: 'pensoft.imageresize::lang.settings.fields.filters.fields.code.comment'
+                        type: text
+                        span: left
+                    description:
+                        label: 'pensoft.imageresize::lang.settings.fields.filters.fields.description.label'
+                        comment: 'pensoft.imageresize::lang.settings.fields.filters.fields.description.comment'
+                        type: text
+                        span: right
+                    rules:
+                        label: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.label'
+                        prompt: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.prompt'
+                        type: repeater
+                        form:
+                            fields:
+                                modifier:
+                                    label: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.label'
+                                    comment: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.comment'
+                                    type: dropdown
+                                    span: left
+                                    options:
+                                        width: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.width'
+                                        height: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.height'
+                                        min_width: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.min_width'
+                                        min_height: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.min_height'
+                                        max_width: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.max_width'
+                                        max_height: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.max_height'
+                                        blur: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.blur'
+                                        sharpen: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.sharpen'
+                                        brightness: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.brightness'
+                                        contrast: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.contrast'
+                                        pixelate: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.pixelate'
+                                        greyscale: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.greyscale'
+                                        invert: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.invert'
+                                        opacity: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.opacity'
+                                        rotate: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.rotate'
+                                        flip: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.flip'
+                                        background: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.background'
+                                        colorize: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.colorize'
+                                        format: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.format'
+                                        quality: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.quality'
+                                        mode: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.mode'
+                                        fit_position: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.modifier.options.fit_position'
+                                value:
+                                    label: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.value.label'
+                                    comment: 'pensoft.imageresize::lang.settings.fields.filters.fields.rules.fields.value.comment'
+                                    type: text
+                                    span: right
+        cache_directory:
+            label: 'pensoft.imageresize::lang.settings.fields.cache_directory.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.cache_directory.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.cache'
+            span: left
+            type: text
+            default: 'storage/app/media/imageresizecache'
+        cache_clear_interval:
+            label: 'pensoft.imageresize::lang.settings.fields.cache_clear_interval.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.cache_clear_interval.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.cache'
+            span: right
+            type: text
+            default: 604800
+        cleanup_on_cache_clear:
+            label: 'pensoft.imageresize::lang.settings.fields.cleanup_on_cache_clear.label'
+            comment: 'pensoft.imageresize::lang.settings.fields.cleanup_on_cache_clear.comment'
+            tab: 'pensoft.imageresize::lang.settings.tabs.cache'
+            span: left
+            type: checkbox
